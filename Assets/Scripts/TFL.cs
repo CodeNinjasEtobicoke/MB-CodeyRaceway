@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class TFL : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public CheckmateCounter checkmateTracker;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            print("You win");
+            if (checkmateTracker.triggeredCheckmates == checkmateTracker.numberOfCheckmates)
+            {
+                print("You win");
+            }
+            else
+            {
+                print("damn bro how desperate are u");
+            }
         }
     }
 

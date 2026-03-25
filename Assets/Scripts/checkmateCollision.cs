@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class checkmateCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool didCollide;
+    public CheckmateCounter count;
     void Start()
     {
-        
+        didCollide = false;
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player" && didCollide == false)
+        {
+            didCollide = true;
+            count.triggeredCheckmates++;
+        }
     }
 }
