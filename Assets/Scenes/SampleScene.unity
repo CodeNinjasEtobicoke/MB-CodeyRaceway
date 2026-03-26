@@ -3387,7 +3387,7 @@ MonoBehaviour:
   lapTime: {fileID: 638784035}
   startCountdown: {fileID: 716923723}
   totalCountdownTime: 3
-  totalLapTime: 100
+  totalLapTime: 150
   codeyMove: {fileID: 2124833697}
 --- !u!1 &1465221492 stripped
 GameObject:
@@ -3790,7 +3790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 656600ea12dcd894d99e51d4d2981d69, type: 3}
       propertyPath: m_Name
-      value: trafficCone (3)
+      value: AlleyRose3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
