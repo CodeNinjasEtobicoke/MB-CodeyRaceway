@@ -16,4 +16,13 @@ public class ibf : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Invoke("itemBoxGoAway", 0.5f);
+            Invoke("itemBoxRespawn", 1f);
+        }
+    }
+
 }

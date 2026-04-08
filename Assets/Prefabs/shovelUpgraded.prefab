@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shovelUpgraded
       objectReference: {fileID: 0}
+    - target: {fileID: 171634720895110443, guid: 068525800195b214cbc600936510b51a, type: 3}
+      propertyPath: m_TagString
+      value: itemBoxes
+      objectReference: {fileID: 0}
     - target: {fileID: 3270105341349114092, guid: 068525800195b214cbc600936510b51a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -74,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8816664304983830049, guid: 068525800195b214cbc600936510b51a, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
