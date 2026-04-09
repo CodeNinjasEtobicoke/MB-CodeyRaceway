@@ -20,8 +20,8 @@ public class ibf : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Invoke("itemBoxGoAway", 0.5f);
-            Invoke("itemBoxRespawn", 1f);
+            Invoke("itemBoxGoAway", 0f);
+            Invoke("itemBoxRespawn", 2f);
         }
     }
 

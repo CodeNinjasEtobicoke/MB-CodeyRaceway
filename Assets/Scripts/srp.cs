@@ -17,13 +17,15 @@ public class srp : MonoBehaviour
             chosenPowerup = powerupList[randomPowerUpIndex];
         }
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && chosenPowerup != null)
         {
-            Debug.Log(chosenPowerup.name);
+            Vector3 pos = transform.position;
+            pos += transform.forward * 5f;
+
+            Instantiate(chosenPowerup, pos, Quaternion.identity);
+            chosenPowerup = null;
         }
     }
 }
