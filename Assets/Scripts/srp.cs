@@ -9,12 +9,13 @@ public class srp : MonoBehaviour
     public GameObject chosenPowerup;
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other.gameObject.tag);
+
 
         if(other.gameObject.tag == "itemBoxes")
         {
             randomPowerUpIndex = Random.Range(0, powerupList.Count);
             chosenPowerup = powerupList[randomPowerUpIndex];
+            Debug.Log(chosenPowerup.gameObject.name);
         }
     }
     void Update()
@@ -24,7 +25,8 @@ public class srp : MonoBehaviour
             Vector3 pos = transform.position;
             pos += transform.forward * 5f;
 
-            Instantiate(chosenPowerup, pos, Quaternion.identity);
+            Debug.Log(chosenPowerup.gameObject.name);
+            Instantiate(chosenPowerup, pos, transform.rotation);
             chosenPowerup = null;
         }
     }

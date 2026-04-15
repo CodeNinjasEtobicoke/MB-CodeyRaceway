@@ -6,6 +6,7 @@ TagManager:
   tags:
   - checkmate
   - itemBoxes
+  - obsticales
   layers:
   - Default
   - TransparentFX

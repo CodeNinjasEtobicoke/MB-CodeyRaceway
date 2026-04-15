@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class sm : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnCollisionEnter(Collision shell)
     {
-        
+        if (shell.gameObject.tag == "obsticales")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        Debug.Log(transform.forward);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * 50f;
+        transform.position += transform.forward * Time.deltaTime * 50;
     }
+
 }
