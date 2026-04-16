@@ -9,8 +9,6 @@ public class srp : MonoBehaviour
     public GameObject chosenPowerup;
     private void OnCollisionEnter(Collision other)
     {
-
-
         if(other.gameObject.tag == "itemBoxes")
         {
             randomPowerUpIndex = Random.Range(0, powerupList.Count);
