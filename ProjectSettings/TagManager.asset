@@ -8,6 +8,8 @@ TagManager:
   - itemBoxes
   - obsticales
   - track
+  - FxTemporaire
+  - terrain
   layers:
   - Default
   - TransparentFX
