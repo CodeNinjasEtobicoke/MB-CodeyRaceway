@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TFL : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class TFL : MonoBehaviour
         {
             if (checkmateTracker.triggeredCheckmates == checkmateTracker.numberOfCheckmates)
             {
-                print("You win");
+                SceneManager.LoadScene(2);
             }
             else
             {
-                print("damn bro how desperate are u");
+                SceneManager.LoadScene(2);
             }
         }
     }

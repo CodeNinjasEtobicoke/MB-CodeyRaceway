@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/codeyraceway.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/New Scene.unity
     guid: fe79afaafce77e74c887e706ec756c91
+  - enabled: 1
+    path: Assets/Scenes/win.unity
+    guid: f4e4228108b694f4d8ab03b2b147c514
   m_configObjects: {}
